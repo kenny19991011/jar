@@ -117,7 +117,7 @@ def webhook_handler():
         response = machine.advance(event)
         if response == False:
             if event.message.text == 'fsm':
-                send_image_message(event.reply_token,'https://d5ffdf3452c9.ngrok.io/show-fsm')
+                send_image_message(event.reply_token,'https://4ff4ec9ec798.ngrok.io/show-fsm')
             else:    
                 send_text_message(event.reply_token, "輸入『drink』即可開始點酒")
 
@@ -132,3 +132,4 @@ def show_fsm():
 if __name__ == "__main__":
     port = os.environ.get("PORT", 8000)
     app.run(host="0.0.0.0", port=port, debug=True)
+
