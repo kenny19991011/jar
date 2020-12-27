@@ -29,7 +29,7 @@ class TocMachine(GraphMachine):
                 text = '偏酸'
             ),
         ]
-        url = 'https://i.imgur.com/MNaMCQN.jpg'
+        url = 'https://i.imgur.com/oFRgYmE.png'
         send_button_message(event.reply_token, title, text, btn, url)
 
     def is_going_to_deep(self, event):
@@ -57,7 +57,7 @@ class TocMachine(GraphMachine):
                 text = '酒感輕'
             )
         ]
-        url = 'https://i.imgur.com/MNaMCQN.jpg'
+        url = 'https://i1.kknews.cc/SIG=1cftso0/1350000284p132721434.jpg'
         send_button_message(event.reply_token, title, text, btn, url)
     def is_going_to_base(self, event):
         global deep
