@@ -40,13 +40,13 @@ def send_button_message(reply_token, title, text, btn, url):
     return "OK"
 def send_carousel_template(reply_token):
     line_bot_api = LineBotApi(channel_access_token)
-    url = 'https://i.imgur.com/Pi6xR7v.jpg'
+    url = 'https://i2.kknews.cc/SIG=1nh5bt4/ctp-vzntr/1531818136622rnrq3q71rn.jpg'
     Carousel_template = TemplateSendMessage(
         alt_text='Carousel template',
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://i.imgur.com/Pi6xR7v.jpg',                   
+                    thumbnail_image_url='https://i2.kknews.cc/SIG=1nh5bt4/ctp-vzntr/1531818136622rnrq3q71rn.jpg',                   
                     title='選擇基酒',
                     text='想喝什麼基酒？',
                     actions=[            
@@ -65,7 +65,7 @@ def send_carousel_template(reply_token):
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://i.imgur.com/0D0VChb.jpg', 
+                    thumbnail_image_url='https://i2.kknews.cc/SIG=1nh5bt4/ctp-vzntr/1531818136622rnrq3q71rn.jpg', 
                     title='選擇基酒',
                     text='想喝什麼基酒？',
                     actions=[
@@ -88,4 +88,5 @@ def send_carousel_template(reply_token):
     )
     line_bot_api.reply_message(reply_token,Carousel_template)
     return "OK"
+
 
